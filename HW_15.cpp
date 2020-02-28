@@ -3,26 +3,23 @@
 
 #include <iostream>
 
-int main()
+void N()
 {
-
 	std::cout << "Enter Variable:";
 	int N;
 	std::cin >> N;
+
 	std::cout << "Even or not(use 0 or 1):";
 	int B;
 	std::cin >> B;
 
-
-	for (int i = 0; i < (N+2)/2; i++)
+	for (int i = 0; i < (N+2-B) / 2 ; i++)
 	{
-		if (B==0)
-		{	
-			std::cout << i*2 <<"\n";
-		}
-		else
-		{
-			std::cout << (i*2)+1 << "\n";
-		}
+		std::cout << (i * 2) + B << "\n";
 	}
+}
+
+int main()
+{
+	N();
 }
